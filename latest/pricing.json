@@ -2093,9 +2093,9 @@
     "openai-response"
    ],
    "billing": "tokens",
-   "input_usd_per_1m": 0.137,
-   "output_usd_per_1m": 0.68,
-   "cached_input_usd_per_1m": 0.0068
+   "input_usd_per_1m": 0.370897,
+   "output_usd_per_1m": 1.84095,
+   "cached_input_usd_per_1m": 0.0184095
   },
   {
    "id": "gpt-6.1-sol-pro",
