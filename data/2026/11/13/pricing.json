@@ -1,0 +1,5064 @@
+{
+ "source_url": "https://api.ezkielyna.store/api/pricing",
+ "license": "CC BY 4.0",
+ "pricing_version": "a42d372ccf0b5dd13ecf71203521f9d2",
+ "price_rule": "tokens: input = model_ratio x $2 per 1M, output = input x completion_ratio; per_call: model_price; both x the lowest public key-group multiplier the model is in. characters = per 1M input characters (speech). audio_minutes: billed by audio length, the per-1M figure is the raw rate.",
+ "groups": {
+  "default": {
+   "label": "Standard 1x (DeepSeek, GLM, Kimi K2, MiniMax, Qwen, MiMo, Hy4 — tanpa Claude/GPT)",
+   "multiplier": 1.0
+  },
+  "free": {
+   "label": "Hemat 1x (hy3, hy4-preview, hy4-preview-f, edge-tts)",
+   "multiplier": 1.0
+  },
+  "media": {
+   "label": "Media 1x (gambar & video: GPT Image, Nano Banana, Flux, Imagen, Seedance, Kling, Veo, Wan, Sora, Vidu)",
+   "multiplier": 1.0
+  },
+  "premium": {
+   "label": "Premium 1.5x (Claude, GPT, Grok, Gemini Pro, Kimi K3, Qwen Max)",
+   "multiplier": 1.5
+  },
+  "pro": {
+   "label": "Pro 3x (Claude & GPT jalur cadangan — dipakai saat jalur utama penuh)",
+   "multiplier": 3.0
+  }
+ },
+ "models": [
+  {
+   "id": "LongCat-2.0",
+   "vendor": "Meituan",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 3.86006,
+   "output_usd_per_1m": 15.2086,
+   "cached_input_usd_per_1m": 0.386006
+  },
+  {
+   "id": "aion-labs-aion-3-0",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 5.43,
+   "output_usd_per_1m": 10.86,
+   "cached_input_usd_per_1m": 1.3575
+  },
+  {
+   "id": "aion-labs-aion-3-0-mini",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.267,
+   "output_usd_per_1m": 2.534,
+   "cached_input_usd_per_1m": 0.325746
+  },
+  {
+   "id": "aion-labs-aion-3-5",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 6.7875,
+   "output_usd_per_1m": 13.575,
+   "cached_input_usd_per_1m": 1.69687
+  },
+  {
+   "id": "aion-labs-aion-3-5-mini",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.58375,
+   "output_usd_per_1m": 3.1675,
+   "cached_input_usd_per_1m": 0.407182
+  },
+  {
+   "id": "aion-labs.aion-2-0",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.448,
+   "output_usd_per_1m": 2.896,
+   "cached_input_usd_per_1m": 0.362
+  },
+  {
+   "id": "auto",
+   "vendor": "Ezkielyna",
+   "key_groups": [
+    "free"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.15865,
+   "output_usd_per_1m": 0.18716,
+   "cached_input_usd_per_1m": 0.0793251
+  },
+  {
+   "id": "balanced-model",
+   "vendor": "Ezkielyna",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.042188,
+   "output_usd_per_1m": 0.178127,
+   "cached_input_usd_per_1m": 0.021094
+  },
+  {
+   "id": "beam-1.0-501b-a23b",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.543,
+   "output_usd_per_1m": 1.80998,
+   "cached_input_usd_per_1m": 0.0723819
+  },
+  {
+   "id": "claude-fable-5",
+   "vendor": "Anthropic",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.7215,
+   "output_usd_per_1m": 3.6075,
+   "cached_input_usd_per_1m": 0.07215
+  },
+  {
+   "id": "claude-fable-5.1",
+   "vendor": "Anthropic",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.91125,
+   "output_usd_per_1m": 4.55625,
+   "cached_input_usd_per_1m": 0.227813
+  },
+  {
+   "id": "claude-fable-5.2",
+   "vendor": "Anthropic",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 6.516,
+   "output_usd_per_1m": 32.58,
+   "cached_input_usd_per_1m": 0.6516
+  },
+  {
+   "id": "claude-haiku-5-5",
+   "vendor": "Anthropic",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0954612,
+   "output_usd_per_1m": 0.477306,
+   "cached_input_usd_per_1m": 0.00954612
+  },
+  {
+   "id": "claude-opus-4.5",
+   "vendor": "Anthropic",
+   "key_groups": [
+    "pro"
+   ],
+   "multiplier": 3.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.20982,
+   "output_usd_per_1m": 6.04911,
+   "cached_input_usd_per_1m": 0.0604911
+  },
+  {
+   "id": "claude-opus-4.6",
+   "vendor": "Anthropic",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.455625,
+   "output_usd_per_1m": 2.27813,
+   "cached_input_usd_per_1m": 0.113906
+  },
+  {
+   "id": "claude-opus-4.7",
+   "vendor": "Anthropic",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.455625,
+   "output_usd_per_1m": 2.27813,
+   "cached_input_usd_per_1m": 0.113906
+  },
+  {
+   "id": "claude-opus-4.8",
+   "vendor": "Anthropic",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.455625,
+   "output_usd_per_1m": 2.27813,
+   "cached_input_usd_per_1m": 0.113906
+  },
+  {
+   "id": "claude-opus-5",
+   "vendor": "Anthropic",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.72,
+   "output_usd_per_1m": 3.6,
+   "cached_input_usd_per_1m": 0.072
+  },
+  {
+   "id": "claude-opus-5.5",
+   "vendor": "Anthropic",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.2286,
+   "output_usd_per_1m": 1.143,
+   "cached_input_usd_per_1m": 0.01143
+  },
+  {
+   "id": "claude-sonnet-4.5",
+   "vendor": "Anthropic",
+   "key_groups": [
+    "pro"
+   ],
+   "multiplier": 3.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.644659,
+   "output_usd_per_1m": 3.2233,
+   "cached_input_usd_per_1m": 0.032233
+  },
+  {
+   "id": "claude-sonnet-4.6",
+   "vendor": "Anthropic",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.447687,
+   "output_usd_per_1m": 2.23843,
+   "cached_input_usd_per_1m": 0.111922
+  },
+  {
+   "id": "claude-sonnet-5",
+   "vendor": "Anthropic",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.273928,
+   "output_usd_per_1m": 1.36964,
+   "cached_input_usd_per_1m": 0.0273928
+  },
+  {
+   "id": "claude-sonnet-5.5",
+   "vendor": "Anthropic",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.1605,
+   "output_usd_per_1m": 0.8025,
+   "cached_input_usd_per_1m": 0.008025
+  },
+  {
+   "id": "command-a-plus",
+   "vendor": "Cohere",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.543,
+   "output_usd_per_1m": 2.715,
+   "cached_input_usd_per_1m": 0.2715
+  },
+  {
+   "id": "deepseek-v3.1",
+   "vendor": "DeepSeek",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.4525,
+   "output_usd_per_1m": 1.7195,
+   "cached_input_usd_per_1m": 0.2353
+  },
+  {
+   "id": "deepseek-v3.2",
+   "vendor": "DeepSeek",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.130596,
+   "output_usd_per_1m": 1.00124,
+   "cached_input_usd_per_1m": 0.0652981
+  },
+  {
+   "id": "deepseek-v4-flash",
+   "vendor": "DeepSeek",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.04,
+   "output_usd_per_1m": 0.806204,
+   "cached_input_usd_per_1m": 0.0054
+  },
+  {
+   "id": "deepseek-v4-flash-0731",
+   "vendor": "DeepSeek",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "text-only",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.050294,
+   "output_usd_per_1m": 0.252794,
+   "cached_input_usd_per_1m": 0.025147
+  },
+  {
+   "id": "deepseek-v4-flash-vision-exp",
+   "vendor": "DeepSeek",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.1232,
+   "output_usd_per_1m": 0.3696,
+   "cached_input_usd_per_1m": 0.0616
+  },
+  {
+   "id": "deepseek-v4-pro",
+   "vendor": "DeepSeek",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.699425,
+   "output_usd_per_1m": 3.07006,
+   "cached_input_usd_per_1m": 0.0528304
+  },
+  {
+   "id": "deepseek-v4-pro-0813",
+   "vendor": "DeepSeek",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "text-only",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.192611,
+   "output_usd_per_1m": 0.577834,
+   "cached_input_usd_per_1m": 0.0064205
+  },
+  {
+   "id": "deepseek-v4.1-flash",
+   "vendor": "DeepSeek",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.046789,
+   "output_usd_per_1m": 0.41776,
+   "cached_input_usd_per_1m": 0.00631651
+  },
+  {
+   "id": "deepseek-v4.1-flash-1017",
+   "vendor": "DeepSeek",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.046789,
+   "output_usd_per_1m": 0.675563,
+   "cached_input_usd_per_1m": 0.00644027
+  },
+  {
+   "id": "devstral-2-123b",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.724,
+   "output_usd_per_1m": 3.62,
+   "cached_input_usd_per_1m": 0.0724
+  },
+  {
+   "id": "doubao-seedance-2.0",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "request",
+   "price_usd": 0.305
+  },
+  {
+   "id": "doubao-seedance-2.0-fast",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "request",
+   "price_usd": 0.294
+  },
+  {
+   "id": "doubao-seedance-2.0-mini",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "request",
+   "price_usd": 0.263
+  },
+  {
+   "id": "doubao-seedance-2.5",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "request",
+   "price_usd": 0.79
+  },
+  {
+   "id": "doubao-seedream-5",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Image",
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "image",
+   "price_usd": 0.119
+  },
+  {
+   "id": "edge-tts",
+   "vendor": "Microsoft",
+   "key_groups": [
+    "default",
+    "free",
+    "premium"
+   ],
+   "multiplier": 1.0,
+   "tags": "TTS",
+   "endpoints": [
+    "openai",
+    "openai-audio"
+   ],
+   "billing": "characters",
+   "input_usd_per_1m": 1.0,
+   "output_usd_per_1m": 1.0,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "ember-1",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 5.43,
+   "output_usd_per_1m": 27.15,
+   "cached_input_usd_per_1m": 0.543
+  },
+  {
+   "id": "flux-3-image",
+   "vendor": "Black Forest Labs",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Image",
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "image",
+   "price_usd": 0.163
+  },
+  {
+   "id": "flux-3-image-klein",
+   "vendor": "Black Forest Labs",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Image",
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "image",
+   "price_usd": 0.04866
+  },
+  {
+   "id": "flux.2-max",
+   "vendor": "Black Forest Labs",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Image",
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "image",
+   "price_usd": 0.237
+  },
+  {
+   "id": "fugu-max",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 3.62,
+   "output_usd_per_1m": 10.86,
+   "cached_input_usd_per_1m": 0.4525
+  },
+  {
+   "id": "fugu-ultra-v2",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 9.05,
+   "output_usd_per_1m": 54.3,
+   "cached_input_usd_per_1m": 0.905
+  },
+  {
+   "id": "gemini-2.5-flash",
+   "vendor": "Google",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.110397,
+   "output_usd_per_1m": 0.919975,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "gemini-2.5-pro",
+   "vendor": "Google",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.96228,
+   "output_usd_per_1m": 7.69824,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "gemini-3-flash-preview",
+   "vendor": "Google",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.078275,
+   "output_usd_per_1m": 0.468867,
+   "cached_input_usd_per_1m": 0.0078275
+  },
+  {
+   "id": "gemini-3-pro-preview",
+   "vendor": "Google",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.368,
+   "output_usd_per_1m": 2.208,
+   "cached_input_usd_per_1m": 0.0368
+  },
+  {
+   "id": "gemini-3.1-flash-lite",
+   "vendor": "Google",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.4525,
+   "output_usd_per_1m": 2.715,
+   "cached_input_usd_per_1m": 0.04525
+  },
+  {
+   "id": "gemini-3.1-flash-lite-preview",
+   "vendor": "Google",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0532,
+   "output_usd_per_1m": 0.318136,
+   "cached_input_usd_per_1m": 0.00532
+  },
+  {
+   "id": "gemini-3.1-pro",
+   "vendor": "Google",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.30375,
+   "output_usd_per_1m": 1.51875,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "gemini-3.1-pro-preview",
+   "vendor": "Google",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.226,
+   "output_usd_per_1m": 1.35374,
+   "cached_input_usd_per_1m": 0.0226
+  },
+  {
+   "id": "gemini-3.1-pro-preview-low",
+   "vendor": "Google",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.239649,
+   "output_usd_per_1m": 1.43789,
+   "cached_input_usd_per_1m": 0.0242045
+  },
+  {
+   "id": "gemini-3.5-flash",
+   "vendor": "Google",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.341283,
+   "output_usd_per_1m": 2.06192,
+   "cached_input_usd_per_1m": 0.0853209
+  },
+  {
+   "id": "gemini-3.5-flash-lite",
+   "vendor": "Google",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0564,
+   "output_usd_per_1m": 0.470376,
+   "cached_input_usd_per_1m": 0.00564
+  },
+  {
+   "id": "gemini-3.8-flash",
+   "vendor": "Google",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.090574,
+   "output_usd_per_1m": 0.451059,
+   "cached_input_usd_per_1m": 0.0090574
+  },
+  {
+   "id": "gemini-4-argon",
+   "vendor": "Google",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.607165,
+   "output_usd_per_1m": 3.02368,
+   "cached_input_usd_per_1m": 0.0607165
+  },
+  {
+   "id": "gemini-embedding-2-preview",
+   "vendor": "Google",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "Embedding",
+   "endpoints": [
+    "embeddings",
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.419403,
+   "output_usd_per_1m": 0.419403,
+   "cached_input_usd_per_1m": 0.0419403
+  },
+  {
+   "id": "gemini-omni-1.1-flash",
+   "vendor": "Google",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "request",
+   "price_usd": 0.0677
+  },
+  {
+   "id": "gemma-3-12b-it",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0905,
+   "output_usd_per_1m": 0.2715,
+   "cached_input_usd_per_1m": 0.013575
+  },
+  {
+   "id": "gemma-3-27b-it",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.1448,
+   "output_usd_per_1m": 0.362,
+   "cached_input_usd_per_1m": 0.03258
+  },
+  {
+   "id": "gemma-3-4b-it",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0905,
+   "output_usd_per_1m": 0.181,
+   "cached_input_usd_per_1m": 0.013575
+  },
+  {
+   "id": "gemma-4-26b-a4b-it",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.138466,
+   "output_usd_per_1m": 0.461549,
+   "cached_input_usd_per_1m": 0.0769317
+  },
+  {
+   "id": "gemma-4-31b",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.2172,
+   "output_usd_per_1m": 0.6516,
+   "cached_input_usd_per_1m": 0.0543
+  },
+  {
+   "id": "gemma-4-31b-it",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.2172,
+   "output_usd_per_1m": 0.6516,
+   "cached_input_usd_per_1m": 0.0543
+  },
+  {
+   "id": "gemma-4-e2b",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0724,
+   "output_usd_per_1m": 0.1448,
+   "cached_input_usd_per_1m": 0.01086
+  },
+  {
+   "id": "glimpse",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.086,
+   "output_usd_per_1m": 5.43,
+   "cached_input_usd_per_1m": 0.1086
+  },
+  {
+   "id": "glm-4-flash",
+   "vendor": "Zhipu AI",
+   "key_groups": [
+    "default",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": "text-only",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0122,
+   "output_usd_per_1m": 0.0122,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "glm-4.5",
+   "vendor": "智谱",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.086,
+   "output_usd_per_1m": 3.98204,
+   "cached_input_usd_per_1m": 0.199064
+  },
+  {
+   "id": "glm-4.5-air",
+   "vendor": "智谱",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.362,
+   "output_usd_per_1m": 1.991,
+   "cached_input_usd_per_1m": 0.0543
+  },
+  {
+   "id": "glm-4.5-flash",
+   "vendor": "Zhipu AI",
+   "key_groups": [
+    "default",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": "text-only",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0122,
+   "output_usd_per_1m": 0.0122,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "glm-4.6",
+   "vendor": "智谱",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.7783,
+   "output_usd_per_1m": 3.16753,
+   "cached_input_usd_per_1m": 0.144764
+  },
+  {
+   "id": "glm-4.7",
+   "vendor": "智谱",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.9955,
+   "output_usd_per_1m": 3.982,
+   "cached_input_usd_per_1m": 0.1991
+  },
+  {
+   "id": "glm-4.7-flash-heretic",
+   "vendor": "智谱",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.1267,
+   "output_usd_per_1m": 0.724002,
+   "cached_input_usd_per_1m": 0.06335
+  },
+  {
+   "id": "glm-4.7-thinking",
+   "vendor": "智谱",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.8145,
+   "output_usd_per_1m": 3.61996,
+   "cached_input_usd_per_1m": 0.122175
+  },
+  {
+   "id": "glm-5",
+   "vendor": "Zhipu AI",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.433179,
+   "output_usd_per_1m": 1.38184,
+   "cached_input_usd_per_1m": 0.0866357
+  },
+  {
+   "id": "glm-5-turbo",
+   "vendor": "智谱",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 2.172,
+   "output_usd_per_1m": 7.23993,
+   "cached_input_usd_per_1m": 0.4344
+  },
+  {
+   "id": "glm-5.3",
+   "vendor": "Zhipu AI",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.376539,
+   "output_usd_per_1m": 1.31789,
+   "cached_input_usd_per_1m": 0.0941349
+  },
+  {
+   "id": "glm-5.3-flash",
+   "vendor": "Zhipu AI",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.15,
+   "output_usd_per_1m": 0.5,
+   "cached_input_usd_per_1m": 0.03
+  },
+  {
+   "id": "glm-5.3-flashx",
+   "vendor": "Zhipu AI",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "text-only",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.113162,
+   "output_usd_per_1m": 0.567134,
+   "cached_input_usd_per_1m": 0.0282905
+  },
+  {
+   "id": "glm-5.3-flashx-legal",
+   "vendor": "智谱",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.6697,
+   "output_usd_per_1m": 2.26251,
+   "cached_input_usd_per_1m": 0.135748
+  },
+  {
+   "id": "glm-5.3-prime",
+   "vendor": "智谱",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 5.068,
+   "output_usd_per_1m": 15.9282,
+   "cached_input_usd_per_1m": 1.0136
+  },
+  {
+   "id": "glm-5v-turbo",
+   "vendor": "Zhipu AI",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.06375,
+   "output_usd_per_1m": 0.240625,
+   "cached_input_usd_per_1m": 0.0159375
+  },
+  {
+   "id": "google-imagen-4",
+   "vendor": "Google",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Image",
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "image",
+   "price_usd": 0.564
+  },
+  {
+   "id": "gpt-4o",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 4.53,
+   "output_usd_per_1m": 18.12,
+   "cached_input_usd_per_1m": 2.265
+  },
+  {
+   "id": "gpt-4o-mini",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.35424,
+   "output_usd_per_1m": 1.41696,
+   "cached_input_usd_per_1m": 0.17712
+  },
+  {
+   "id": "gpt-5-mini",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.67875,
+   "output_usd_per_1m": 5.43,
+   "cached_input_usd_per_1m": 0.067875
+  },
+  {
+   "id": "gpt-5-nano",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.13575,
+   "output_usd_per_1m": 1.086,
+   "cached_input_usd_per_1m": 0.013575
+  },
+  {
+   "id": "gpt-5.2",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 4.5144,
+   "output_usd_per_1m": 36.1152,
+   "cached_input_usd_per_1m": 0.90288
+  },
+  {
+   "id": "gpt-5.2-chat-latest",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 2.88,
+   "output_usd_per_1m": 23.04,
+   "cached_input_usd_per_1m": 0.288
+  },
+  {
+   "id": "gpt-5.2-codex",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 4.75125,
+   "output_usd_per_1m": 38.01,
+   "cached_input_usd_per_1m": 0.475125
+  },
+  {
+   "id": "gpt-5.3-codex",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.359537,
+   "output_usd_per_1m": 1.79769,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "gpt-5.4",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.3456,
+   "output_usd_per_1m": 2.0736,
+   "cached_input_usd_per_1m": 0.03456
+  },
+  {
+   "id": "gpt-5.4-mini",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.209134,
+   "output_usd_per_1m": 1.2548,
+   "cached_input_usd_per_1m": 0.0418267
+  },
+  {
+   "id": "gpt-5.4-nano",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.543,
+   "output_usd_per_1m": 3.39375,
+   "cached_input_usd_per_1m": 0.0543
+  },
+  {
+   "id": "gpt-5.4-pro",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 81.45,
+   "output_usd_per_1m": 488.7,
+   "cached_input_usd_per_1m": 12.2175
+  },
+  {
+   "id": "gpt-5.5",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.544266,
+   "output_usd_per_1m": 3.26559,
+   "cached_input_usd_per_1m": 0.0544266
+  },
+  {
+   "id": "gpt-5.5-pro",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 81.45,
+   "output_usd_per_1m": 488.7,
+   "cached_input_usd_per_1m": 12.2175
+  },
+  {
+   "id": "gpt-5.6",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.1728,
+   "output_usd_per_1m": 1.0368,
+   "cached_input_usd_per_1m": 0.01728
+  },
+  {
+   "id": "gpt-5.6-luna",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.05,
+   "output_usd_per_1m": 0.3,
+   "cached_input_usd_per_1m": 0.005
+  },
+  {
+   "id": "gpt-5.6-luna-max",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.18781,
+   "output_usd_per_1m": 0.94014,
+   "cached_input_usd_per_1m": 0.0469524
+  },
+  {
+   "id": "gpt-5.6-luna-pro",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.543,
+   "output_usd_per_1m": 3.258,
+   "cached_input_usd_per_1m": 0.0543
+  },
+  {
+   "id": "gpt-5.6-luna-review",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.170736,
+   "output_usd_per_1m": 0.854673,
+   "cached_input_usd_per_1m": 0.042684
+  },
+  {
+   "id": "gpt-5.6-luna-review-max",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.18781,
+   "output_usd_per_1m": 0.94014,
+   "cached_input_usd_per_1m": 0.0469524
+  },
+  {
+   "id": "gpt-5.6-sol",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.221929,
+   "output_usd_per_1m": 1.10964,
+   "cached_input_usd_per_1m": 0.0221929
+  },
+  {
+   "id": "gpt-5.6-sol-pro",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 10.86,
+   "output_usd_per_1m": 54.3,
+   "cached_input_usd_per_1m": 1.086
+  },
+  {
+   "id": "gpt-5.6-terra",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.228309,
+   "output_usd_per_1m": 1.13956,
+   "cached_input_usd_per_1m": 0.0570773
+  },
+  {
+   "id": "gpt-5.6-terra-max",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.25114,
+   "output_usd_per_1m": 1.25352,
+   "cached_input_usd_per_1m": 0.062785
+  },
+  {
+   "id": "gpt-5.6-terra-pro",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 5.43,
+   "output_usd_per_1m": 32.58,
+   "cached_input_usd_per_1m": 0.543
+  },
+  {
+   "id": "gpt-5.6-terra-review-max",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.25114,
+   "output_usd_per_1m": 1.25352,
+   "cached_input_usd_per_1m": 0.062785
+  },
+  {
+   "id": "gpt-6-astra",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.69,
+   "output_usd_per_1m": 3.45,
+   "cached_input_usd_per_1m": 0.069
+  },
+  {
+   "id": "gpt-6-luna",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0456192,
+   "output_usd_per_1m": 0.228096,
+   "cached_input_usd_per_1m": 0.00456192
+  },
+  {
+   "id": "gpt-6-luna-max",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.18781,
+   "output_usd_per_1m": 0.94014,
+   "cached_input_usd_per_1m": 0.0469524
+  },
+  {
+   "id": "gpt-6-luna-pro",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.2715,
+   "output_usd_per_1m": 1.3575,
+   "cached_input_usd_per_1m": 0.02715
+  },
+  {
+   "id": "gpt-6-sol",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.1952,
+   "output_usd_per_1m": 0.976,
+   "cached_input_usd_per_1m": 0.01952
+  },
+  {
+   "id": "gpt-6-sol-pro",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 5.43,
+   "output_usd_per_1m": 27.15,
+   "cached_input_usd_per_1m": 0.543
+  },
+  {
+   "id": "gpt-6.1-sol",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.370897,
+   "output_usd_per_1m": 1.84095,
+   "cached_input_usd_per_1m": 0.0184095
+  },
+  {
+   "id": "gpt-6.1-sol-pro",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 5.43,
+   "output_usd_per_1m": 27.15,
+   "cached_input_usd_per_1m": 0.2715
+  },
+  {
+   "id": "gpt-6.1-terra",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.1017,
+   "output_usd_per_1m": 0.5085,
+   "cached_input_usd_per_1m": 0.01017
+  },
+  {
+   "id": "gpt-6.1-terra-pro",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 2.715,
+   "output_usd_per_1m": 13.575,
+   "cached_input_usd_per_1m": 0.13575
+  },
+  {
+   "id": "gpt-image-1",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Image",
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "image",
+   "price_usd": 0.0732
+  },
+  {
+   "id": "gpt-image-1.5",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Image",
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "image",
+   "price_usd": 0.007776
+  },
+  {
+   "id": "gpt-image-2",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Image",
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "image",
+   "price_usd": 0.00825
+  },
+  {
+   "id": "gpt-image-2.5",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Image",
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "image",
+   "price_usd": 0.002422
+  },
+  {
+   "id": "gpt-image-2.5-flare",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Image",
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "image",
+   "price_usd": 0.00215
+  },
+  {
+   "id": "gpt-image-2.5-sunburst",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Image",
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "image",
+   "price_usd": 0.00216
+  },
+  {
+   "id": "gpt-image-2.6-flare",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "media",
+    "premium"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "call",
+   "price_usd": 0.0095
+  },
+  {
+   "id": "gpt-image-2.6-sunburst",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "media",
+    "premium"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "call",
+   "price_usd": 0.0095
+  },
+  {
+   "id": "grok-4.20-0309-reasoning",
+   "vendor": "xAI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.523066,
+   "output_usd_per_1m": 1.04613,
+   "cached_input_usd_per_1m": 0.0836905
+  },
+  {
+   "id": "grok-4.20-beta",
+   "vendor": "xAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 3.39375,
+   "output_usd_per_1m": 6.7875,
+   "cached_input_usd_per_1m": 0.543
+  },
+  {
+   "id": "grok-4.20-multi-agent-beta",
+   "vendor": "xAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 3.39375,
+   "output_usd_per_1m": 6.7875,
+   "cached_input_usd_per_1m": 0.543
+  },
+  {
+   "id": "grok-4.3",
+   "vendor": "xAI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.493205,
+   "output_usd_per_1m": 0.981479,
+   "cached_input_usd_per_1m": 0.0784196
+  },
+  {
+   "id": "grok-4.5",
+   "vendor": "xAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "text-only",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0261169,
+   "output_usd_per_1m": 0.130301,
+   "cached_input_usd_per_1m": 0.00652923
+  },
+  {
+   "id": "grok-4.6",
+   "vendor": "xAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0510488,
+   "output_usd_per_1m": 0.254689,
+   "cached_input_usd_per_1m": 0.0127622
+  },
+  {
+   "id": "grok-4.7",
+   "vendor": "xAI",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0669453,
+   "output_usd_per_1m": 0.200836,
+   "cached_input_usd_per_1m": 0.0163281
+  },
+  {
+   "id": "grok-4.7-build-fast",
+   "vendor": "xAI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.152617,
+   "output_usd_per_1m": 0.457851,
+   "cached_input_usd_per_1m": 0.0381543
+  },
+  {
+   "id": "grok-imagine-i2v-720p",
+   "vendor": "xAI",
+   "key_groups": [
+    "media",
+    "premium"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "call",
+   "price_usd": 0.13032
+  },
+  {
+   "id": "grok-imagine-image-edit",
+   "vendor": "xAI",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Image",
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "image",
+   "price_usd": 0.0255
+  },
+  {
+   "id": "grok-imagine-image-lite",
+   "vendor": "xAI",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Image",
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "image",
+   "price_usd": 0.02229
+  },
+  {
+   "id": "grok-imagine-image-pro",
+   "vendor": "xAI",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Image",
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "image",
+   "price_usd": 0.02229
+  },
+  {
+   "id": "grok-imagine-video",
+   "vendor": "xAI",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.2127
+  },
+  {
+   "id": "grok-imagine-video-1.5",
+   "vendor": "xAI",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.3189
+  },
+  {
+   "id": "happyhorse-1.1",
+   "vendor": "Alibaba",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 1.2012
+  },
+  {
+   "id": "hy4-preview",
+   "vendor": "Tencent Hunyuan",
+   "key_groups": [
+    "free"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.02,
+   "output_usd_per_1m": 0.02,
+   "cached_input_usd_per_1m": 0.005
+  },
+  {
+   "id": "hy4-preview-f",
+   "vendor": "Tencent Hunyuan",
+   "key_groups": [
+    "free"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.02,
+   "output_usd_per_1m": 0.02,
+   "cached_input_usd_per_1m": 0.005
+  },
+  {
+   "id": "ideogram-4",
+   "vendor": "Ideogram",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Image",
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "image",
+   "price_usd": 0.127
+  },
+  {
+   "id": "inkling",
+   "vendor": "快手",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.81,
+   "output_usd_per_1m": 7.3305,
+   "cached_input_usd_per_1m": 0.3077
+  },
+  {
+   "id": "kimi-k2",
+   "vendor": "Moonshot",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.54755,
+   "output_usd_per_1m": 6.24452,
+   "cached_input_usd_per_1m": 0.232133
+  },
+  {
+   "id": "kimi-k2-thinking",
+   "vendor": "Moonshot",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.629,
+   "output_usd_per_1m": 6.78755,
+   "cached_input_usd_per_1m": 0.40725
+  },
+  {
+   "id": "kimi-k2.7",
+   "vendor": "Moonshot AI",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.35375,
+   "output_usd_per_1m": 5.62875,
+   "cached_input_usd_per_1m": 0.338438
+  },
+  {
+   "id": "kimi-k2.8",
+   "vendor": "Moonshot AI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.390217,
+   "output_usd_per_1m": 1.64281,
+   "cached_input_usd_per_1m": 0.0780434
+  },
+  {
+   "id": "kimi-k3",
+   "vendor": "Moonshot AI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.856049,
+   "output_usd_per_1m": 4.28024,
+   "cached_input_usd_per_1m": 0.0856049
+  },
+  {
+   "id": "kimi-k3-fast-api",
+   "vendor": "Moonshot",
+   "key_groups": [
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 12.2175,
+   "output_usd_per_1m": 61.0875,
+   "cached_input_usd_per_1m": 1.22175
+  },
+  {
+   "id": "kimi-k3.1-pro",
+   "vendor": "Moonshot AI",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.432812,
+   "output_usd_per_1m": 2.15107,
+   "cached_input_usd_per_1m": 0.0432812
+  },
+  {
+   "id": "kling-2.6",
+   "vendor": "Kuaishou",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "request",
+   "price_usd": 0.903
+  },
+  {
+   "id": "kling-3.0",
+   "vendor": "Kuaishou",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.99
+  },
+  {
+   "id": "kling-3.0-omni",
+   "vendor": "Kuaishou",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "request",
+   "price_usd": 0.903
+  },
+  {
+   "id": "kling-3.0-pro",
+   "vendor": "Kuaishou",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 1.4355
+  },
+  {
+   "id": "kling-3.0-turbo",
+   "vendor": "Kuaishou",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "request",
+   "price_usd": 0.395
+  },
+  {
+   "id": "kling-4",
+   "vendor": "Kuaishou",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "request",
+   "price_usd": 0.603
+  },
+  {
+   "id": "kling-o3-4k",
+   "vendor": "快手",
+   "key_groups": [
+    "media",
+    "premium"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "call",
+   "price_usd": 0.670858
+  },
+  {
+   "id": "kling-video-o1",
+   "vendor": "Kuaishou",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "request",
+   "price_usd": 0.285
+  },
+  {
+   "id": "lfm-2.5-24b-a2b",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0905,
+   "output_usd_per_1m": 1.267,
+   "cached_input_usd_per_1m": 0.04525
+  },
+  {
+   "id": "ling-3.1-flash",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.08145,
+   "output_usd_per_1m": 0.24435,
+   "cached_input_usd_per_1m": 0.01629
+  },
+  {
+   "id": "llama-3.2-3b-instruct",
+   "vendor": "Meta",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0905,
+   "output_usd_per_1m": 0.5973,
+   "cached_input_usd_per_1m": 0.013575
+  },
+  {
+   "id": "llama-3.3-70b-instruct",
+   "vendor": "Meta",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.0679,
+   "output_usd_per_1m": 1.42992,
+   "cached_input_usd_per_1m": 0.190086
+  },
+  {
+   "id": "magistral-small-2509",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.905,
+   "output_usd_per_1m": 2.715,
+   "cached_input_usd_per_1m": 0.13575
+  },
+  {
+   "id": "mimo-v2.6-flash",
+   "vendor": "Xiaomi MiMo",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.10447,
+   "output_usd_per_1m": 0.10447,
+   "cached_input_usd_per_1m": 0.0261175
+  },
+  {
+   "id": "mimo-v2.6-pro",
+   "vendor": "Xiaomi MiMo",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.742352,
+   "output_usd_per_1m": 3.71176,
+   "cached_input_usd_per_1m": 0.185588
+  },
+  {
+   "id": "mimo-v2.6-pro-ultraspeed",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 7.8735,
+   "output_usd_per_1m": 15.747,
+   "cached_input_usd_per_1m": 0.0653501
+  },
+  {
+   "id": "minimax-h3-15s",
+   "vendor": "MiniMax",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.099
+  },
+  {
+   "id": "minimax-h3-pro",
+   "vendor": "MiniMax",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.495
+  },
+  {
+   "id": "minimax-m2",
+   "vendor": "MiniMax",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.543,
+   "output_usd_per_1m": 2.172,
+   "cached_input_usd_per_1m": 0.08145
+  },
+  {
+   "id": "minimax-m2.5",
+   "vendor": "MiniMax",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.648432,
+   "output_usd_per_1m": 2.58724,
+   "cached_input_usd_per_1m": 0.0648432
+  },
+  {
+   "id": "minimax-m2.7",
+   "vendor": "MiniMax",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "text-only",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0354,
+   "output_usd_per_1m": 0.1416,
+   "cached_input_usd_per_1m": 0.00708
+  },
+  {
+   "id": "minimax-m3",
+   "vendor": "MiniMax",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0872769,
+   "output_usd_per_1m": 0.370927,
+   "cached_input_usd_per_1m": 0.0218192
+  },
+  {
+   "id": "minimax-m3-preview",
+   "vendor": "MiniMax",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.543,
+   "output_usd_per_1m": 2.172,
+   "cached_input_usd_per_1m": 0.1086
+  },
+  {
+   "id": "minimax-m3.1-flash",
+   "vendor": "MiniMax",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.06,
+   "output_usd_per_1m": 0.24,
+   "cached_input_usd_per_1m": 0.006
+  },
+  {
+   "id": "ministral-3-14b-instruct",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.362,
+   "output_usd_per_1m": 0.362,
+   "cached_input_usd_per_1m": 0.0362
+  },
+  {
+   "id": "ministral-3-3b-instruct",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.181,
+   "output_usd_per_1m": 0.181,
+   "cached_input_usd_per_1m": 0.0181
+  },
+  {
+   "id": "ministral-3-8b-instruct",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.2715,
+   "output_usd_per_1m": 0.2715,
+   "cached_input_usd_per_1m": 0.02715
+  },
+  {
+   "id": "mistral-large",
+   "vendor": "Mistral",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 3.62,
+   "output_usd_per_1m": 10.86,
+   "cached_input_usd_per_1m": 0.362
+  },
+  {
+   "id": "mistral-large-3",
+   "vendor": "Mistral",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.905,
+   "output_usd_per_1m": 2.715,
+   "cached_input_usd_per_1m": 0.0905
+  },
+  {
+   "id": "mistral-large-4-0",
+   "vendor": "Mistral",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.267,
+   "output_usd_per_1m": 3.801,
+   "cached_input_usd_per_1m": 0.1267
+  },
+  {
+   "id": "mistral-small-3.2-24b-instruct",
+   "vendor": "Mistral",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.169778,
+   "output_usd_per_1m": 0.509334,
+   "cached_input_usd_per_1m": 0.0180983
+  },
+  {
+   "id": "mistral-small-4",
+   "vendor": "Mistral",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.2715,
+   "output_usd_per_1m": 0.8145,
+   "cached_input_usd_per_1m": 0.02715
+  },
+  {
+   "id": "moondream3-preview",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.543,
+   "output_usd_per_1m": 4.52498,
+   "cached_input_usd_per_1m": 0.08145
+  },
+  {
+   "id": "moondream3.1-9b-a2b",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.543,
+   "output_usd_per_1m": 4.52498,
+   "cached_input_usd_per_1m": 0.08145
+  },
+  {
+   "id": "muse-chat",
+   "vendor": "Meta",
+   "key_groups": [
+    "default",
+    "premium"
+   ],
+   "multiplier": 1.0,
+   "tags": "chat",
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.00015,
+   "output_usd_per_1m": 0.0006,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "muse-ember",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.181,
+   "output_usd_per_1m": 0.905,
+   "cached_input_usd_per_1m": 0.00724
+  },
+  {
+   "id": "muse-glimmer-30b",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.543,
+   "output_usd_per_1m": 2.172,
+   "cached_input_usd_per_1m": 0.0723819
+  },
+  {
+   "id": "muse-image",
+   "vendor": "Meta",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "image",
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "call",
+   "price_usd": 0.0002
+  },
+  {
+   "id": "muse-spark-1.2-contributor",
+   "vendor": "讯飞",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.181,
+   "output_usd_per_1m": 0.362,
+   "cached_input_usd_per_1m": 0.00362
+  },
+  {
+   "id": "muse-spark-1.3-contributor",
+   "vendor": "讯飞",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.181,
+   "output_usd_per_1m": 0.362,
+   "cached_input_usd_per_1m": 0.00362
+  },
+  {
+   "id": "muse-spark-open",
+   "vendor": "讯飞",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 2.2625,
+   "output_usd_per_1m": 7.6925,
+   "cached_input_usd_per_1m": 0.2715
+  },
+  {
+   "id": "muse-video",
+   "vendor": "Meta",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "call",
+   "price_usd": 0.0005
+  },
+  {
+   "id": "nano-banana",
+   "vendor": "Google",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Image",
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "image",
+   "price_usd": 0.0204
+  },
+  {
+   "id": "nano-banana-2",
+   "vendor": "Google",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Image",
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "image",
+   "price_usd": 0.0231
+  },
+  {
+   "id": "nano-banana-2.1",
+   "vendor": "Google",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Image",
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "image",
+   "price_usd": 0.028875
+  },
+  {
+   "id": "nano-banana-pro",
+   "vendor": "Google",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Image",
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "image",
+   "price_usd": 0.033
+  },
+  {
+   "id": "nemotron-3.5-super-vl",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.2715,
+   "output_usd_per_1m": 0.850691,
+   "cached_input_usd_per_1m": 0.036191
+  },
+  {
+   "id": "nvidia-nemotron-3-5-lightning-30b-a3b",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.1267,
+   "output_usd_per_1m": 0.361995,
+   "cached_input_usd_per_1m": 0.0723964
+  },
+  {
+   "id": "nvidia-nemotron-3-nano-30b-a3b",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.13575,
+   "output_usd_per_1m": 0.543,
+   "cached_input_usd_per_1m": 0.0202675
+  },
+  {
+   "id": "nvidia-nemotron-3-super-120b",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.13575,
+   "output_usd_per_1m": 0.723995,
+   "cached_input_usd_per_1m": 0.0202675
+  },
+  {
+   "id": "nvidia-nemotron-3-ultra-550b-a55b",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.13125,
+   "output_usd_per_1m": 5.65625,
+   "cached_input_usd_per_1m": 0.339375
+  },
+  {
+   "id": "nvidia-nemotron-nano-12b-v2",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.362,
+   "output_usd_per_1m": 1.086,
+   "cached_input_usd_per_1m": 0.0543
+  },
+  {
+   "id": "nvidia-nemotron-nano-9b-v2",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.1086,
+   "output_usd_per_1m": 0.416296,
+   "cached_input_usd_per_1m": 0.01629
+  },
+  {
+   "id": "openai-gpt-oss-120b",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.1267,
+   "output_usd_per_1m": 0.542998,
+   "cached_input_usd_per_1m": 0.019005
+  },
+  {
+   "id": "openai-gpt-oss-20b",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0543,
+   "output_usd_per_1m": 0.235298,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "openai-gpt-oss-safeguard-120b",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.2715,
+   "output_usd_per_1m": 1.086,
+   "cached_input_usd_per_1m": 0.040725
+  },
+  {
+   "id": "openai-gpt-oss-safeguard-20b",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.13575,
+   "output_usd_per_1m": 0.543,
+   "cached_input_usd_per_1m": 0.067875
+  },
+  {
+   "id": "orcacyber-flash-1.0",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.448,
+   "output_usd_per_1m": 2.896,
+   "cached_input_usd_per_1m": 0.2715
+  },
+  {
+   "id": "orcacyber-glm-5.3-flash",
+   "vendor": "智谱",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.448,
+   "output_usd_per_1m": 2.896,
+   "cached_input_usd_per_1m": 0.2715
+  },
+  {
+   "id": "orcacyber-mimo-flash",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.448,
+   "output_usd_per_1m": 2.896,
+   "cached_input_usd_per_1m": 0.2715
+  },
+  {
+   "id": "orcacyber-minimax-m3.1-flash",
+   "vendor": "MiniMax",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.448,
+   "output_usd_per_1m": 2.896,
+   "cached_input_usd_per_1m": 0.2715
+  },
+  {
+   "id": "orcacyber-qwen3.8-flash-next",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.448,
+   "output_usd_per_1m": 2.896,
+   "cached_input_usd_per_1m": 0.2715
+  },
+  {
+   "id": "palmyra-vision-7b",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.2715,
+   "output_usd_per_1m": 1.086,
+   "cached_input_usd_per_1m": 0.040725
+  },
+  {
+   "id": "pareto-26.9",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 4.525,
+   "output_usd_per_1m": 13.575,
+   "cached_input_usd_per_1m": 0.4525
+  },
+  {
+   "id": "particle-1",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0905,
+   "output_usd_per_1m": 0.905,
+   "cached_input_usd_per_1m": 0.00543
+  },
+  {
+   "id": "qwen3-235b-a22b-2507",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.2534,
+   "output_usd_per_1m": 1.35749,
+   "cached_input_usd_per_1m": 0.0407214
+  },
+  {
+   "id": "qwen3-235b-a22b-thinking-2507",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.8145,
+   "output_usd_per_1m": 6.33502,
+   "cached_input_usd_per_1m": 0.122175
+  },
+  {
+   "id": "qwen3-30b-a3b",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.2172,
+   "output_usd_per_1m": 0.905007,
+   "cached_input_usd_per_1m": 0.03258
+  },
+  {
+   "id": "qwen3-32b",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.1448,
+   "output_usd_per_1m": 0.5068,
+   "cached_input_usd_per_1m": 0.02172
+  },
+  {
+   "id": "qwen3-5-35b-a3b",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.2715,
+   "output_usd_per_1m": 1.81001,
+   "cached_input_usd_per_1m": 0.090491
+  },
+  {
+   "id": "qwen3-6-35b-a3b",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.181,
+   "output_usd_per_1m": 1.81,
+   "cached_input_usd_per_1m": 0.02715
+  },
+  {
+   "id": "qwen3-coder",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.543,
+   "output_usd_per_1m": 1.80998,
+   "cached_input_usd_per_1m": 0.180982
+  },
+  {
+   "id": "qwen3-coder-30b-a3b-instruct",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.2715,
+   "output_usd_per_1m": 1.086,
+   "cached_input_usd_per_1m": 0.040725
+  },
+  {
+   "id": "qwen3-coder-next",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.2172,
+   "output_usd_per_1m": 1.44801,
+   "cached_input_usd_per_1m": 0.126693
+  },
+  {
+   "id": "qwen3-coder-turbo",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.6335,
+   "output_usd_per_1m": 2.71499,
+   "cached_input_usd_per_1m": 0.072409
+  },
+  {
+   "id": "qwen3-next-80b-a3b-instruct",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.1629,
+   "output_usd_per_1m": 1.991,
+   "cached_input_usd_per_1m": 0.024435
+  },
+  {
+   "id": "qwen3-vl-235b-a22b-instruct",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.3801,
+   "output_usd_per_1m": 3.43899,
+   "cached_input_usd_per_1m": 0.181004
+  },
+  {
+   "id": "qwen3-vl-235b-a22b-thinking",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.3801,
+   "output_usd_per_1m": 3.43899,
+   "cached_input_usd_per_1m": 0.181004
+  },
+  {
+   "id": "qwen3-vl-30b-a3b-thinking",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.4525,
+   "output_usd_per_1m": 1.629,
+   "cached_input_usd_per_1m": 0.067875
+  },
+  {
+   "id": "qwen3.5-397b-a17b",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.086,
+   "output_usd_per_1m": 6.516,
+   "cached_input_usd_per_1m": 0.203625
+  },
+  {
+   "id": "qwen3.6-27b",
+   "vendor": "Alibaba",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0200761,
+   "output_usd_per_1m": 0.214814,
+   "cached_input_usd_per_1m": 0.010038
+  },
+  {
+   "id": "qwen3.7-flash",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0543,
+   "output_usd_per_1m": 0.235298,
+   "cached_input_usd_per_1m": 0.01086
+  },
+  {
+   "id": "qwen3.7-plus",
+   "vendor": "Alibaba",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.263752,
+   "output_usd_per_1m": 1.31111,
+   "cached_input_usd_per_1m": 0.0659379
+  },
+  {
+   "id": "qwen3.8-2.4t-a95b",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 3.62,
+   "output_usd_per_1m": 10.86,
+   "cached_input_usd_per_1m": 0.4525
+  },
+  {
+   "id": "qwen3.8-flash",
+   "vendor": "Alibaba",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "Vision",
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0396,
+   "output_usd_per_1m": 0.13365,
+   "cached_input_usd_per_1m": 0.00792
+  },
+  {
+   "id": "qwen3.8-max",
+   "vendor": "Alibaba",
+   "key_groups": [
+    "premium"
+   ],
+   "multiplier": 1.5,
+   "tags": null,
+   "endpoints": [
+    "anthropic",
+    "gemini",
+    "openai",
+    "openai-response"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.16128,
+   "output_usd_per_1m": 0.48384,
+   "cached_input_usd_per_1m": 0.032256
+  },
+  {
+   "id": "qwen3.8-max-0902",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 3.62,
+   "output_usd_per_1m": 10.86,
+   "cached_input_usd_per_1m": 0.4525
+  },
+  {
+   "id": "qwen3.8-max-preview",
+   "vendor": "Alibaba",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.0368,
+   "output_usd_per_1m": 3.1104,
+   "cached_input_usd_per_1m": 0.10368
+  },
+  {
+   "id": "qwen3.8-max-prime",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 7.24,
+   "output_usd_per_1m": 21.72,
+   "cached_input_usd_per_1m": 0.905
+  },
+  {
+   "id": "qwen3.8-omni-flash",
+   "vendor": "Alibaba",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.0637953,
+   "output_usd_per_1m": 0.200317,
+   "cached_input_usd_per_1m": 0.00637953
+  },
+  {
+   "id": "sakana-namazu",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.7195,
+   "output_usd_per_1m": 7.23995,
+   "cached_input_usd_per_1m": 0.271509
+  },
+  {
+   "id": "seed-2-1-turbo",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.905,
+   "output_usd_per_1m": 4.525,
+   "cached_input_usd_per_1m": 0.13575
+  },
+  {
+   "id": "seed-2.0-code",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.905,
+   "output_usd_per_1m": 5.43,
+   "cached_input_usd_per_1m": 0.13575
+  },
+  {
+   "id": "seedance-2.0-1080p",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.23595
+  },
+  {
+   "id": "seedance-2.0-480p-hq",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 1.03125
+  },
+  {
+   "id": "seedance-2.0-720p",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.209137
+  },
+  {
+   "id": "seedance-2.0-720p-hq",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 1.44375
+  },
+  {
+   "id": "seedance-2.0-720p-lite",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.1155
+  },
+  {
+   "id": "seedance-2.0-fast-1080p",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.254925
+  },
+  {
+   "id": "seedance-2.0-fast-720p",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.228112
+  },
+  {
+   "id": "seedance-2.0-i2v-720p",
+   "vendor": null,
+   "key_groups": [
+    "media",
+    "premium"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "call",
+   "price_usd": 0.24073
+  },
+  {
+   "id": "seedance-2.0-mini-1080p",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.178613
+  },
+  {
+   "id": "seedance-2.0-mini-720p",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.1518
+  },
+  {
+   "id": "seedance-2.5-1080p",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.3432
+  },
+  {
+   "id": "seedance-2.5-480p",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.144375
+  },
+  {
+   "id": "seedance-2.5-720p",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.427123
+  },
+  {
+   "id": "seedance-2.5-720p-30s",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 1.65
+  },
+  {
+   "id": "seedance-2.5-720p-hq",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 1.85625
+  },
+  {
+   "id": "seedance-2.5-720p-lite",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.198
+  },
+  {
+   "id": "seedance-2.5-720p-plus",
+   "vendor": "ByteDance",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 1.5675
+  },
+  {
+   "id": "seedream-5.0",
+   "vendor": null,
+   "key_groups": [
+    "media",
+    "premium"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "call",
+   "price_usd": 0.057
+  },
+  {
+   "id": "seedream-5.0-flash",
+   "vendor": null,
+   "key_groups": [
+    "media",
+    "premium"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "call",
+   "price_usd": 0.04275
+  },
+  {
+   "id": "seedream-5.0-lite",
+   "vendor": null,
+   "key_groups": [
+    "media",
+    "premium"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "call",
+   "price_usd": 0.04275
+  },
+  {
+   "id": "sora-2",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "request",
+   "price_usd": 0.45
+  },
+  {
+   "id": "step-5-preview",
+   "vendor": "StepFun",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.457857,
+   "output_usd_per_1m": 1.23621,
+   "cached_input_usd_per_1m": 0.0457857
+  },
+  {
+   "id": "stt-elevenlabs-scribe-v2",
+   "vendor": "Ezkielyna",
+   "key_groups": [
+    "default",
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": "STT",
+   "endpoints": [
+    "openai",
+    "openai-audio"
+   ],
+   "billing": "audio_minutes",
+   "input_usd_per_1m": 20.04,
+   "output_usd_per_1m": 20.04,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "stt-xai-v1",
+   "vendor": "xAI",
+   "key_groups": [
+    "default",
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": "STT",
+   "endpoints": [
+    "openai",
+    "openai-audio"
+   ],
+   "billing": "audio_minutes",
+   "input_usd_per_1m": 3.78,
+   "output_usd_per_1m": 3.78,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "text-embedding-3-large",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "Embedding",
+   "endpoints": [
+    "embeddings",
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.162864,
+   "output_usd_per_1m": 0.162864,
+   "cached_input_usd_per_1m": 0.106676
+  },
+  {
+   "id": "text-embedding-3-small",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "Embedding",
+   "endpoints": [
+    "embeddings",
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.05616,
+   "output_usd_per_1m": 0.05616,
+   "cached_input_usd_per_1m": 0.0560477
+  },
+  {
+   "id": "text-embedding-ada-002",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": "Embedding",
+   "endpoints": [
+    "embeddings",
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.142769,
+   "output_usd_per_1m": 0.142769,
+   "cached_input_usd_per_1m": 0.0935139
+  },
+  {
+   "id": "trinity-large-thinking",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.543,
+   "output_usd_per_1m": 1.80998,
+   "cached_input_usd_per_1m": 0.08145
+  },
+  {
+   "id": "tts-chatterbox-hd",
+   "vendor": "Ezkielyna",
+   "key_groups": [
+    "default",
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": "TTS",
+   "endpoints": [
+    "openai",
+    "openai-audio"
+   ],
+   "billing": "characters",
+   "input_usd_per_1m": 100.0,
+   "output_usd_per_1m": 100.0,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "tts-elevenlabs-turbo-v2.5",
+   "vendor": "Ezkielyna",
+   "key_groups": [
+    "default",
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": "TTS",
+   "endpoints": [
+    "openai",
+    "openai-audio"
+   ],
+   "billing": "characters",
+   "input_usd_per_1m": 125.0,
+   "output_usd_per_1m": 125.0,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "tts-gemini-3.1-flash",
+   "vendor": "Google",
+   "key_groups": [
+    "default",
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": "TTS",
+   "endpoints": [
+    "openai",
+    "openai-audio"
+   ],
+   "billing": "characters",
+   "input_usd_per_1m": 375.0,
+   "output_usd_per_1m": 375.0,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "tts-inworld-1.5-max",
+   "vendor": "Ezkielyna",
+   "key_groups": [
+    "default",
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": "TTS",
+   "endpoints": [
+    "openai",
+    "openai-audio"
+   ],
+   "billing": "characters",
+   "input_usd_per_1m": 25.0,
+   "output_usd_per_1m": 25.0,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "tts-kokoro",
+   "vendor": "Ezkielyna",
+   "key_groups": [
+    "default",
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": "TTS",
+   "endpoints": [
+    "openai",
+    "openai-audio"
+   ],
+   "billing": "characters",
+   "input_usd_per_1m": 7.0,
+   "output_usd_per_1m": 7.0,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "tts-minimax-speech-02-hd",
+   "vendor": "MiniMax",
+   "key_groups": [
+    "default",
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": "TTS",
+   "endpoints": [
+    "openai",
+    "openai-audio"
+   ],
+   "billing": "characters",
+   "input_usd_per_1m": 250.0,
+   "output_usd_per_1m": 250.0,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "tts-qwen3-0.6b",
+   "vendor": "Alibaba",
+   "key_groups": [
+    "default",
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": "TTS",
+   "endpoints": [
+    "openai",
+    "openai-audio"
+   ],
+   "billing": "characters",
+   "input_usd_per_1m": 175.0,
+   "output_usd_per_1m": 175.0,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "tts-qwen3-1.7b",
+   "vendor": "Alibaba",
+   "key_groups": [
+    "default",
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": "TTS",
+   "endpoints": [
+    "openai",
+    "openai-audio"
+   ],
+   "billing": "characters",
+   "input_usd_per_1m": 225.0,
+   "output_usd_per_1m": 225.0,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "tts-xai-v1",
+   "vendor": "xAI",
+   "key_groups": [
+    "default",
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": "TTS",
+   "endpoints": [
+    "openai",
+    "openai-audio"
+   ],
+   "billing": "characters",
+   "input_usd_per_1m": 37.5,
+   "output_usd_per_1m": 37.5,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "veo-3.1",
+   "vendor": "Google",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "request",
+   "price_usd": 0.107
+  },
+  {
+   "id": "veo-3.1-fast",
+   "vendor": "Google",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "request",
+   "price_usd": 0.564
+  },
+  {
+   "id": "veo-3.1-lite",
+   "vendor": "Google",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "request",
+   "price_usd": 0.136
+  },
+  {
+   "id": "viduq3-pro",
+   "vendor": "Vidu",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "request",
+   "price_usd": 0.452
+  },
+  {
+   "id": "viduq3-turbo",
+   "vendor": "Vidu",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "request",
+   "price_usd": 0.19
+  },
+  {
+   "id": "wan-3.0-1080p",
+   "vendor": "Alibaba",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.15675
+  },
+  {
+   "id": "wan-3.0-24fps",
+   "vendor": "Alibaba",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.825
+  },
+  {
+   "id": "wan-3.0-480p",
+   "vendor": "Alibaba",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.061875
+  },
+  {
+   "id": "wan-3.0-720p",
+   "vendor": "Alibaba",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 0.0825
+  },
+  {
+   "id": "wan-3.0-pro",
+   "vendor": "Alibaba",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "second",
+   "price_usd": 1.85625
+  },
+  {
+   "id": "wan3.0-video",
+   "vendor": "Alibaba",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "request",
+   "price_usd": 0.767
+  },
+  {
+   "id": "wan3.0-video-prime",
+   "vendor": "Alibaba",
+   "key_groups": [
+    "media"
+   ],
+   "multiplier": 1.0,
+   "tags": "Video",
+   "endpoints": [
+    "openai",
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "request",
+   "price_usd": 2.17
+  },
+  {
+   "id": "whisper-large-v3",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "default",
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": "STT",
+   "endpoints": [
+    "openai",
+    "openai-audio"
+   ],
+   "billing": "audio_minutes",
+   "input_usd_per_1m": 12.0,
+   "output_usd_per_1m": 12.0,
+   "cached_input_usd_per_1m": null
+  },
+  {
+   "id": "xiaomi-mimo-v2-5",
+   "vendor": null,
+   "key_groups": [
+    "default"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.724,
+   "output_usd_per_1m": 3.62,
+   "cached_input_usd_per_1m": 0.1448
+  }
+ ]
+}
