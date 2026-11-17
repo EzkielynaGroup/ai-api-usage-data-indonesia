@@ -249,9 +249,9 @@
     "openai-response"
    ],
    "billing": "tokens",
-   "input_usd_per_1m": 0.0637854,
-   "output_usd_per_1m": 0.318927,
-   "cached_input_usd_per_1m": 0.0159464
+   "input_usd_per_1m": 0.091122,
+   "output_usd_per_1m": 0.45561,
+   "cached_input_usd_per_1m": 0.0227805
   },
   {
    "id": "claude-haiku-5-5",
@@ -619,9 +619,9 @@
     "openai-response"
    ],
    "billing": "tokens",
-   "input_usd_per_1m": 0.0397706,
-   "output_usd_per_1m": 0.355096,
-   "cached_input_usd_per_1m": 0.00536904
+   "input_usd_per_1m": 0.046789,
+   "output_usd_per_1m": 0.41776,
+   "cached_input_usd_per_1m": 0.00631651
   },
   {
    "id": "deepseek-v4.1-flash-1017",
@@ -638,9 +638,9 @@
     "openai-response"
    ],
    "billing": "tokens",
-   "input_usd_per_1m": 0.0397706,
-   "output_usd_per_1m": 0.574228,
-   "cached_input_usd_per_1m": 0.00547423
+   "input_usd_per_1m": 0.046789,
+   "output_usd_per_1m": 0.675563,
+   "cached_input_usd_per_1m": 0.00644027
   },
   {
    "id": "devstral-2-123b",
@@ -1069,6 +1069,42 @@
    "cached_input_usd_per_1m": 0.0607165
   },
   {
+   "id": "gemini-4-carbon",
+   "vendor": "Google",
+   "key_groups": [
+    "default",
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 4.82667,
+   "output_usd_per_1m": 24.1333,
+   "cached_input_usd_per_1m": 0.241333
+  },
+  {
+   "id": "gemini-4-hydrogen",
+   "vendor": "Google",
+   "key_groups": [
+    "default",
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 3.62,
+   "output_usd_per_1m": 18.1,
+   "cached_input_usd_per_1m": 0.181
+  },
+  {
    "id": "gemini-embedding-2-preview",
    "vendor": "Google",
    "key_groups": [
@@ -1415,9 +1451,9 @@
     "openai-response"
    ],
    "billing": "tokens",
-   "input_usd_per_1m": 0.075,
-   "output_usd_per_1m": 0.25,
-   "cached_input_usd_per_1m": 0.015
+   "input_usd_per_1m": 0.15,
+   "output_usd_per_1m": 0.5,
+   "cached_input_usd_per_1m": 0.03
   },
   {
    "id": "glm-5.3-flashx",
@@ -1967,9 +2003,9 @@
     "openai-response"
    ],
    "billing": "tokens",
-   "input_usd_per_1m": 0.345,
-   "output_usd_per_1m": 1.725,
-   "cached_input_usd_per_1m": 0.0345
+   "input_usd_per_1m": 0.69,
+   "output_usd_per_1m": 3.45,
+   "cached_input_usd_per_1m": 0.069
   },
   {
    "id": "gpt-6-luna",
@@ -1987,9 +2023,9 @@
     "openai-response"
    ],
    "billing": "tokens",
-   "input_usd_per_1m": 0.0228096,
-   "output_usd_per_1m": 0.114048,
-   "cached_input_usd_per_1m": 0.00228096
+   "input_usd_per_1m": 0.0456192,
+   "output_usd_per_1m": 0.228096,
+   "cached_input_usd_per_1m": 0.00456192
   },
   {
    "id": "gpt-6-luna-max",
@@ -2043,9 +2079,9 @@
     "openai-response"
    ],
    "billing": "tokens",
-   "input_usd_per_1m": 0.0976,
-   "output_usd_per_1m": 0.488,
-   "cached_input_usd_per_1m": 0.00976
+   "input_usd_per_1m": 0.1952,
+   "output_usd_per_1m": 0.976,
+   "cached_input_usd_per_1m": 0.01952
   },
   {
    "id": "gpt-6-sol-pro",
@@ -2080,9 +2116,9 @@
     "openai-response"
    ],
    "billing": "tokens",
-   "input_usd_per_1m": 0.185449,
-   "output_usd_per_1m": 0.920475,
-   "cached_input_usd_per_1m": 0.00920474
+   "input_usd_per_1m": 0.370897,
+   "output_usd_per_1m": 1.84095,
+   "cached_input_usd_per_1m": 0.0184095
   },
   {
    "id": "gpt-6.1-sol-pro",
@@ -2217,6 +2253,23 @@
   },
   {
    "id": "gpt-image-2.6-flare",
+   "vendor": "OpenAI",
+   "key_groups": [
+    "media",
+    "premium"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "image-generation",
+    "openai"
+   ],
+   "billing": "per_call",
+   "unit": "call",
+   "price_usd": 0.0095
+  },
+  {
+   "id": "gpt-image-2.6-sunburst",
    "vendor": "OpenAI",
    "key_groups": [
     "media",
@@ -2540,6 +2593,24 @@
    "cached_input_usd_per_1m": 0.3077
   },
   {
+   "id": "inkling-2-small",
+   "vendor": "快手",
+   "key_groups": [
+    "default",
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.724,
+   "output_usd_per_1m": 2.41331,
+   "cached_input_usd_per_1m": 0.0724
+  },
+  {
    "id": "kimi-k2",
    "vendor": "Moonshot",
    "key_groups": [
@@ -2835,6 +2906,56 @@
    "input_usd_per_1m": 1.0679,
    "output_usd_per_1m": 1.42992,
    "cached_input_usd_per_1m": 0.190086
+  },
+  {
+   "id": "longcat-2.5-preview",
+   "vendor": null,
+   "key_groups": [
+    "default",
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 1.9005,
+   "output_usd_per_1m": 7.47524,
+   "cached_input_usd_per_1m": 0.03801
+  },
+  {
+   "id": "longcat-distilled-i2v-720p",
+   "vendor": null,
+   "key_groups": [
+    "media",
+    "premium"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "call",
+   "price_usd": 0.04344
+  },
+  {
+   "id": "longcat-i2v-720p",
+   "vendor": null,
+   "key_groups": [
+    "media",
+    "premium"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai-video"
+   ],
+   "billing": "per_call",
+   "unit": "call",
+   "price_usd": 0.120667
   },
   {
    "id": "magistral-small-2509",
@@ -4055,6 +4176,42 @@
    "input_usd_per_1m": 0.0637953,
    "output_usd_per_1m": 0.200317,
    "cached_input_usd_per_1m": 0.00637953
+  },
+  {
+   "id": "qwen4-max",
+   "vendor": "阿里巴巴",
+   "key_groups": [
+    "default",
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 3.62,
+   "output_usd_per_1m": 10.86,
+   "cached_input_usd_per_1m": 0.181
+  },
+  {
+   "id": "ripple-65b-preview",
+   "vendor": null,
+   "key_groups": [
+    "default",
+    "premium",
+    "pro"
+   ],
+   "multiplier": 1.0,
+   "tags": null,
+   "endpoints": [
+    "openai"
+   ],
+   "billing": "tokens",
+   "input_usd_per_1m": 0.482666,
+   "output_usd_per_1m": 1.448,
+   "cached_input_usd_per_1m": 0.120666
   },
   {
    "id": "seed-2-1-turbo",
