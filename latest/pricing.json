@@ -1082,9 +1082,9 @@
     "openai"
    ],
    "billing": "tokens",
-   "input_usd_per_1m": 4.82667,
-   "output_usd_per_1m": 24.1333,
-   "cached_input_usd_per_1m": 0.241333
+   "input_usd_per_1m": 0.6,
+   "output_usd_per_1m": 3.0,
+   "cached_input_usd_per_1m": 0.03
   },
   {
    "id": "gemini-4-hydrogen",
@@ -1100,9 +1100,9 @@
     "openai"
    ],
    "billing": "tokens",
-   "input_usd_per_1m": 3.62,
-   "output_usd_per_1m": 18.1,
-   "cached_input_usd_per_1m": 0.181
+   "input_usd_per_1m": 0.45,
+   "output_usd_per_1m": 2.25,
+   "cached_input_usd_per_1m": 0.0225
   },
   {
    "id": "gemini-embedding-2-preview",
