@@ -381,9 +381,9 @@
     "openai-response"
    ],
    "billing": "tokens",
-   "input_usd_per_1m": 0.460159,
-   "output_usd_per_1m": 2.30079,
-   "cached_input_usd_per_1m": 0.0230079
+   "input_usd_per_1m": 0.920594,
+   "output_usd_per_1m": 4.60297,
+   "cached_input_usd_per_1m": 0.0460297
   },
   {
    "id": "claude-sonnet-4.5",
