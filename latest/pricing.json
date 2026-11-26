@@ -1802,25 +1802,6 @@
    "cached_input_usd_per_1m": 0.005
   },
   {
-   "id": "gpt-5.6-luna-max",
-   "vendor": "OpenAI",
-   "key_groups": [
-    "premium"
-   ],
-   "multiplier": 1.5,
-   "tags": "Vision",
-   "endpoints": [
-    "anthropic",
-    "gemini",
-    "openai",
-    "openai-response"
-   ],
-   "billing": "tokens",
-   "input_usd_per_1m": 0.18781,
-   "output_usd_per_1m": 0.94014,
-   "cached_input_usd_per_1m": 0.0469524
-  },
-  {
    "id": "gpt-5.6-luna-pro",
    "vendor": "OpenAI",
    "key_groups": [
@@ -1836,44 +1817,6 @@
    "input_usd_per_1m": 0.543,
    "output_usd_per_1m": 3.258,
    "cached_input_usd_per_1m": 0.0543
-  },
-  {
-   "id": "gpt-5.6-luna-review",
-   "vendor": "OpenAI",
-   "key_groups": [
-    "premium"
-   ],
-   "multiplier": 1.5,
-   "tags": null,
-   "endpoints": [
-    "anthropic",
-    "gemini",
-    "openai",
-    "openai-response"
-   ],
-   "billing": "tokens",
-   "input_usd_per_1m": 0.170736,
-   "output_usd_per_1m": 0.854673,
-   "cached_input_usd_per_1m": 0.042684
-  },
-  {
-   "id": "gpt-5.6-luna-review-max",
-   "vendor": "OpenAI",
-   "key_groups": [
-    "premium"
-   ],
-   "multiplier": 1.5,
-   "tags": "Vision",
-   "endpoints": [
-    "anthropic",
-    "gemini",
-    "openai",
-    "openai-response"
-   ],
-   "billing": "tokens",
-   "input_usd_per_1m": 0.18781,
-   "output_usd_per_1m": 0.94014,
-   "cached_input_usd_per_1m": 0.0469524
   },
   {
    "id": "gpt-5.6-sol",
@@ -1933,25 +1876,6 @@
    "cached_input_usd_per_1m": 0.0570773
   },
   {
-   "id": "gpt-5.6-terra-max",
-   "vendor": "OpenAI",
-   "key_groups": [
-    "premium"
-   ],
-   "multiplier": 1.5,
-   "tags": "Vision",
-   "endpoints": [
-    "anthropic",
-    "gemini",
-    "openai",
-    "openai-response"
-   ],
-   "billing": "tokens",
-   "input_usd_per_1m": 0.25114,
-   "output_usd_per_1m": 1.25352,
-   "cached_input_usd_per_1m": 0.062785
-  },
-  {
    "id": "gpt-5.6-terra-pro",
    "vendor": "OpenAI",
    "key_groups": [
@@ -1967,25 +1891,6 @@
    "input_usd_per_1m": 5.43,
    "output_usd_per_1m": 32.58,
    "cached_input_usd_per_1m": 0.543
-  },
-  {
-   "id": "gpt-5.6-terra-review-max",
-   "vendor": "OpenAI",
-   "key_groups": [
-    "premium"
-   ],
-   "multiplier": 1.5,
-   "tags": "Vision",
-   "endpoints": [
-    "anthropic",
-    "gemini",
-    "openai",
-    "openai-response"
-   ],
-   "billing": "tokens",
-   "input_usd_per_1m": 0.25114,
-   "output_usd_per_1m": 1.25352,
-   "cached_input_usd_per_1m": 0.062785
   },
   {
    "id": "gpt-6-astra",
@@ -2026,25 +1931,6 @@
    "input_usd_per_1m": 0.0456192,
    "output_usd_per_1m": 0.228096,
    "cached_input_usd_per_1m": 0.00456192
-  },
-  {
-   "id": "gpt-6-luna-max",
-   "vendor": "OpenAI",
-   "key_groups": [
-    "premium"
-   ],
-   "multiplier": 1.5,
-   "tags": "Vision",
-   "endpoints": [
-    "anthropic",
-    "gemini",
-    "openai",
-    "openai-response"
-   ],
-   "billing": "tokens",
-   "input_usd_per_1m": 0.18781,
-   "output_usd_per_1m": 0.94014,
-   "cached_input_usd_per_1m": 0.0469524
   },
   {
    "id": "gpt-6-luna-pro",
